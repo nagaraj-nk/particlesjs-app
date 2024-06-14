@@ -3,69 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connecting Particles with Login Form</title>
+    <title>Connecting Particles</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             overflow: hidden;
             height: 100%;
-            font-family: Arial, sans-serif;
         }
         #particles-js {
-            position: absolute;
             width: 100%;
             height: 100%;
             background-color: #2b2e4a;
-        }
-        .login-form-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            z-index: 1;
-        }
-        .login-form-container h2 {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .login-form-container input[type="text"],
-        .login-form-container input[type="password"] {
-            width: 94%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .login-form-container input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #2b2e4a;
-            border: none;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .login-form-container input[type="submit"]:hover {
-            background-color: #1f1f3a;
         }
     </style>
 </head>
 <body>
     <div id="particles-js"></div>
-    <div class="login-form-container">
-        <h2>Login</h2>
-        <form>
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-        </form>
-    </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         particlesJS("particles-js", {
